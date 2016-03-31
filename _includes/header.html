@@ -19,13 +19,13 @@
       </div>
       {% endif %}
 
+      {% if site.menu_main %}
       <nav class="mdl-navigation mdl-layout--large-screen-only">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
+        {% for option in site.menu_main %}
+        <a class="mdl-navigation__link" href="{{ option[1].link }}">{{ option[1].name }}</a>
         {% endfor %}
       </nav>
+      {% endif %}
 
       {% if site.more_vert %}
       <button class="mdl-button mdl-js-button mdl-button--icon" id="menu-lower-left">
