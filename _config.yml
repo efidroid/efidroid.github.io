@@ -33,5 +33,7 @@ more_vert:
 disqus: true
 disqus_shortname: 'gdgmanagua'
 
+enable_search: false
+
 # Build settings
 markdown: kramdown
