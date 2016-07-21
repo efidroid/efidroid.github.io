@@ -1,0 +1,37 @@
+$frame_width_orig: 422px;
+$frame_height_orig: 800px;
+
+@mixin phoneframesz($width) {
+    width: $width;
+    height: ($frame_height_orig/$frame_width_orig*$width);
+    data-width-orig: $frame_width_orig;
+    data-height-orig: $frame_height_orig;
+}
+.phoneframe {
+    @include phoneframesz(300px);
+    background-image: url(../img/frame.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .screen {
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 7.9%;
+        left: 7.6%;
+        top: 8.5%;
+        bottom: 12.4%;
+    }
+
+    .glare {
+        background-image: url(../img/glare.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: -0.2%;
+    }
+}
