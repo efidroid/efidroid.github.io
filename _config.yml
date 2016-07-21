@@ -18,10 +18,13 @@ post_type: highlight    # values [ highlight, default ]
 pagination_type: default  # values [ ops, default ]
 
 menu_main:
-  option2:
+  option0:
     name: Wiki
     link: https://github.com/efidroid/projectmanagement/wiki
-  option3:
+  option1:
+    name: Issues
+    link: https://github.com/efidroid/projectmanagement/issues
+  option2:
     name: About
     link: /about
 
