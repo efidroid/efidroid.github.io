@@ -18,9 +18,6 @@ post_type: highlight    # values [ highlight, default ]
 pagination_type: default  # values [ ops, default ]
 
 menu_main:
-  option1:
-    name: Blog
-    link: /blog.html
   option2:
     name: Wiki
     link: https://github.com/efidroid/projectmanagement/wiki
