@@ -22,6 +22,9 @@ menu_main:
     name: Blog
     link: /blog.html
   option2:
+    name: Wiki
+    link: https://github.com/efidroid/projectmanagement/wiki
+  option3:
     name: About
     link: /about
 
