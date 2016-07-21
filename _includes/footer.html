@@ -5,7 +5,9 @@
       <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
       <h1 class="mdl-mega-footer--heading">INFO</h1>
       <ul class="mdl-mega-footer--link-list">
+        {% if site.email %}
         <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        {% endif %}
         <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">subscribe via RSS</a></li>
       </ul>
     </div>
