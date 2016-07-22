@@ -15,13 +15,40 @@ $frame_height_orig: 800px;
     position: relative;
 
     .screen {
-        background-size: cover;
-        background-repeat: no-repeat;
         position: absolute;
         right: 7.9%;
         left: 7.6%;
         top: 8.5%;
         bottom: 12.4%;
+        overflow: hidden;
+
+        .bx-wrapper {
+            border: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+
+            .bx-pager.bx-default-pager a.active {
+                background: white;
+            }
+
+            .bx-prev {
+                left: -50px;
+            }
+            .bx-next {
+                right: -50px;
+            }
+        }
+
+        .bxslider {
+            &>li {
+                list-style: none;
+            }
+        }
+
+        .framebuffer {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     .glare {
