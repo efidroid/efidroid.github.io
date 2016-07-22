@@ -11,6 +11,7 @@ github_username:  efidroid
 google_plus_com: '114053643671219382368'  # Community link
 #google_plus_per: '+GDGManagua'  #Personal link
 #facebook_app_id: 12345
+google_analytics_tracking_id: UA-81181158-1
 
 # Layout settings
 header_type: default  # values [ drawer, default ]
